@@ -1,0 +1,33 @@
+name = hyperion
+description = Drupal administration theme for Dandelion
+base theme = adminimal
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+plugins[panels][layouts] = layouts
+
+; ========================================
+; Stylesheets
+; ========================================
+; stylesheets[all][] = css/hyperion.styles.css
+
+; ========================================
+; Scripts
+; ========================================
+
+; ========================================
+; Regions
+; ========================================
+regions[hidden] = Hidden
+regions[content_before] = Before Content
+regions[sidebar_left] = Sidebar Left
+regions[content] = Content
+regions[sidebar_right] = Sidebar Right
+regions[content_after] = After Content
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[sidebar_first] = First sidebar (Hidden)
+regions_hidden[] = hidden
+regions_hidden[] = sidebar_first

@@ -1,0 +1,14 @@
+@import "bourbon";
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+@import "variables";
+@import "abstractions";
+@import "base";
+
+#page {
+  .pane-node-body {
+    max-width: 60em;
+  }
+}

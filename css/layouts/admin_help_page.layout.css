@@ -1,0 +1,144 @@
+/*
+ * A partial implementation of the Ruby list functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/lists.rb
+ */
+/*
+ * A partial implementation of the Ruby constants functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/constants.rb
+ */
+/*
+ * A partial implementation of the Ruby display functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/core/lib/compass/core/sass_extensions/functions/display.rb
+ */
+/**
+ * @file
+ * Lists.
+ */
+#page ol,
+#page ul {
+  font-size: 14px;
+  font-size: 1rem;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.96429em; }
+
+#page li {
+  margin-top: 0.23571em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.23571em; }
+
+/**
+ * @file
+ * Typography.
+ */
+* html {
+  font-size: 87.5%; }
+
+html {
+  font-size: 14px;
+  line-height: 1.57143em; }
+
+#page {
+  /**
+   * Headings
+   */
+  /**
+   * Paragraphs
+   */
+  /**
+   * Quotes
+   */ }
+  #page h1,
+  #page h2,
+  #page h3,
+  #page h4,
+  #page h5,
+  #page h6 {
+    margin-top: 1.57143em;
+    padding-top: 0em;
+    padding-bottom: 0.15714em;
+    margin-bottom: 0.86429em;
+    line-height: 1.4;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: normal; }
+  #page h1 {
+    font-size: 32px;
+    font-size: 2.28571rem;
+    margin-top: 1.57143em;
+    padding-top: 0em;
+    padding-bottom: 0.11786em;
+    margin-bottom: 1.17857em; }
+  #page h2 {
+    font-size: 24px;
+    font-size: 1.71429rem; }
+  #page h3,
+  #page h4,
+  #page h5,
+  #page h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold; }
+  #page h3 {
+    font-size: 18px;
+    font-size: 1.28571rem; }
+  #page h4,
+  #page h5,
+  #page h6 {
+    font-size: 16px;
+    font-size: 1.14286rem; }
+  #page p,
+  #page blockquote {
+    font-size: 14px;
+    font-size: 1rem;
+    margin-top: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 1.96429em;
+    line-height: 1.57143; }
+  #page p + img {
+    float: left;
+    margin-right: 1em; }
+  #page blockquote {
+    font-size: 15px;
+    font-size: 1.07143rem;
+    line-height: 1.57143;
+    margin-top: 1.57143em;
+    padding-top: 1.17857em;
+    padding-bottom: 1.17857em;
+    margin-bottom: 1.57143em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-left: 4px solid #e9e9e9;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    color: #222; }
+    #page blockquote p,
+    #page blockquote ol,
+    #page blockquote ul {
+      font-size: 15px;
+      font-size: 1.07143rem;
+      line-height: 1.57143; }
+    #page blockquote > p:last-child,
+    #page blockquote > ol:last-child,
+    #page blockquote > ul:last-child {
+      margin-bottom: 0; }
+  #page q {
+    font-style: italic; }
+  #page .highlight {
+    background: #FFFF00; }
+
+/*----------------------------------------------------------------------
+>= 752
+----------------------------------------------------------------------*/
+@media (min-width: 47em) {
+  #page blockquote {
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-left: 2.5em;
+    padding-right: 2.5em; } }
+
+#page .pane-node-body {
+  max-width: 60em; }

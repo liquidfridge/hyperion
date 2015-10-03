@@ -1,0 +1,17 @@
+@mixin font-size($font-size){
+  font-size: $font-size;
+  font-size: rem($font-size);
+}
+
+@mixin overflow-wrap($overflow-wrap){
+  // normal | break-word
+  $word-wrap: $overflow-wrap;
+  word-wrap: $word-wrap;
+  overflow-wrap: $overflow-wrap;
+}
+
+@mixin word-wrap() {
+  @include overflow-wrap(break-word);
+  @include word-break(break-word);
+  @include hyphens(auto);
+}

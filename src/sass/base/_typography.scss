@@ -1,0 +1,123 @@
+/**
+ * @file
+ * Typography.
+ */
+
+@include establish-baseline($base-font-size);
+
+#page {
+  /**
+   * Headings
+   */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include rhythm(1, 0, 0.1, 0.55);
+    line-height: 1.4;
+    font-family: $serif;
+    font-weight: normal;
+  }
+
+  h1 {
+    @include font-size(32px);
+    @include rhythm(1, 0, 0.075, 0.75);
+  }
+
+  h2 {
+    @include font-size(24px);
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $sans-serif;
+    font-weight: bold;
+  }
+
+  h3 {
+    @include font-size(18px);
+  }
+
+  h4,
+  h5,
+  h6 {
+    @include font-size(16px);
+  }
+
+  /**
+   * Paragraphs
+   */
+  p,
+  %p {
+    @include font-size(14px);
+    @include rhythm(0, 0, 0, 1.25);
+    line-height: ($base-line-height/ $em-base);
+  }
+
+  p + img {
+    float: left;
+    margin-right: $horz-spacing-unit;
+  }
+
+  /**
+   * Quotes
+   */
+  blockquote {
+    @extend %p;
+    @include font-size(15px);
+    line-height: ($base-line-height / $em-base);
+    @include rhythm(1, 0.75, 0.75, 1);
+    margin-left: $horz-spacing-unit * 0.5;
+    margin-right: $horz-spacing-unit * 0.5;
+    padding-left: $horz-spacing-unit * 2;
+    padding-right: $horz-spacing-unit * 2;
+    border-left: 4px solid $lighter-grey;
+    font-family: $serif;
+    font-style: italic;
+    color: $black;
+
+    p,
+    ol,
+    ul {
+      @include font-size(15px);
+      line-height: ($base-line-height / $em-base);
+    }
+
+    > p,
+    > ol,
+    > ul {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  q {
+    font-style: italic;
+  }
+
+  .highlight {
+    background: $yellow;
+  }
+}
+
+/*----------------------------------------------------------------------
+>= 752
+----------------------------------------------------------------------*/
+
+@include breakpoint($medium) {
+
+  #page {
+    blockquote {
+      margin-left: $horz-spacing-unit * 3;
+      margin-right: $horz-spacing-unit * 3;
+      padding-left: $horz-spacing-unit * 2.5;
+      padding-right: $horz-spacing-unit * 2.5;
+    }
+  }
+
+}

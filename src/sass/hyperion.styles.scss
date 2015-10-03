@@ -1,0 +1,142 @@
+@import "bourbon";
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+@import "variables";
+@import "abstractions";
+
+strong {
+  font-family: inherit !important;
+}
+
+input, textarea, img {
+  max-width: 100% !important;
+}
+
+#page {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+  #page {
+    padding: 20px 0 !important;
+  }
+}
+
+.slicknav_btn {
+  background-position: 8px 11px;
+  font-size: 16px;
+}
+
+input.form-autocomplete, input.form-text, input.form-file, textarea.form-textarea, select.form-select {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  font-size: 16px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input.form-autocomplete, input.form-text, input.form-file, textarea.form-textarea, select.form-select {
+    -webkit-padding-start: 6px;
+    -webkit-padding-end: 6px;
+  }
+
+  select.form-select {
+    -webkit-padding-start: 6px;
+    -webkit-padding-end: 18px;
+  }
+}
+
+.style-checkboxes input[type=checkbox],
+.style-checkboxes input[type=radio] {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+fieldset {
+  legend {
+    font-size: 16px !important;
+  }
+}
+
+.form-item,
+.form-wrapper {
+  margin-bottom: 2em;
+}
+
+form {
+  > div {
+    > .form-wrapper {
+      &:last-child {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}
+
+.form-wrapper {
+  &.horizontal-tabs-pane {
+    margin-bottom: 0.5em;
+  }
+}
+
+.fieldset-wrapper {
+  > .form-item:last-child, > .form-wrapper:last-child {
+    margin-bottom: 0.5em;
+  }
+}
+
+.form-item {
+  label {
+    font-size: 16px !important;
+
+    &.option {
+      font-size: 14px !important;
+    }
+  }
+
+  .form-media {
+    .button {
+      display: inline-block;
+      margin: 0.2em 0 0.5em;
+    }
+
+    .preview {
+      margin: 0.2em 0 0.5em;
+    }
+  }
+}
+
+.horizontal-tabs  {
+  ul.horizontal-tabs-list {
+    font-size: 14px;
+
+    li {
+      text-align: center;
+
+      a {
+        padding: 0.75em 1em;
+      }
+
+      &.selected {
+        a {
+          padding: 0.75em 1em;
+        }
+      }
+    }
+  }
+
+  fieldset.horizontal-tabs-pane {
+    padding: 1em 1.5em;
+  }
+}
+
+body.admin-menu.adminimal-menu:before {
+  display: none;
+}
+
+td.ctools-export-ui-operations {
+  position: relative;
+}

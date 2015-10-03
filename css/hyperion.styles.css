@@ -1,0 +1,95 @@
+/*
+ * A partial implementation of the Ruby list functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/lists.rb
+ */
+/*
+ * A partial implementation of the Ruby constants functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/constants.rb
+ */
+/*
+ * A partial implementation of the Ruby display functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/core/lib/compass/core/sass_extensions/functions/display.rb
+ */
+strong {
+  font-family: inherit !important; }
+
+input, textarea, img {
+  max-width: 100% !important; }
+
+#page {
+  overflow: hidden; }
+
+@media only screen and (max-width: 480px) {
+  #page {
+    padding: 20px 0 !important; } }
+
+.slicknav_btn {
+  background-position: 8px 11px;
+  font-size: 16px; }
+
+input.form-autocomplete, input.form-text, input.form-file, textarea.form-textarea, select.form-select {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  font-size: 16px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input.form-autocomplete, input.form-text, input.form-file, textarea.form-textarea, select.form-select {
+    -webkit-padding-start: 6px;
+    -webkit-padding-end: 6px; }
+  select.form-select {
+    -webkit-padding-start: 6px;
+    -webkit-padding-end: 18px; } }
+
+.style-checkboxes input[type=checkbox],
+.style-checkboxes input[type=radio] {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  -moz-transition: none !important;
+       transition: none !important; }
+
+fieldset legend {
+  font-size: 16px !important; }
+
+.form-item,
+.form-wrapper {
+  margin-bottom: 2em; }
+
+form > div > .form-wrapper:last-child {
+  margin-bottom: 0.5em; }
+
+.form-wrapper.horizontal-tabs-pane {
+  margin-bottom: 0.5em; }
+
+.fieldset-wrapper > .form-item:last-child, .fieldset-wrapper > .form-wrapper:last-child {
+  margin-bottom: 0.5em; }
+
+.form-item label {
+  font-size: 16px !important; }
+  .form-item label.option {
+    font-size: 14px !important; }
+
+.form-item .form-media .button {
+  display: inline-block;
+  margin: 0.2em 0 0.5em; }
+
+.form-item .form-media .preview {
+  margin: 0.2em 0 0.5em; }
+
+.horizontal-tabs ul.horizontal-tabs-list {
+  font-size: 14px; }
+  .horizontal-tabs ul.horizontal-tabs-list li {
+    text-align: center; }
+    .horizontal-tabs ul.horizontal-tabs-list li a {
+      padding: 0.75em 1em; }
+    .horizontal-tabs ul.horizontal-tabs-list li.selected a {
+      padding: 0.75em 1em; }
+
+.horizontal-tabs fieldset.horizontal-tabs-pane {
+  padding: 1em 1.5em; }
+
+body.admin-menu.adminimal-menu:before {
+  display: none; }
+
+td.ctools-export-ui-operations {
+  position: relative; }

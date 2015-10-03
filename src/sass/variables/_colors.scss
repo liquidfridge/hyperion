@@ -1,0 +1,21 @@
+$black         : #222;
+$white         : #FFF;
+$red           : #DD0000;
+$orange        : #FF9900;
+$yellow        : #FFFF00;
+$blue          : #006699;
+
+$grey          : mix($white, $black, 40%);
+$light-grey    : mix($white, $black, 75%);
+$lighter-grey  : mix($white, $black, 90%);
+$lightest-grey : mix($white, $black, 95%);
+
+$navy          : #0A2D50;
+$navy-grey     : mix($navy, $lightest-grey, 30%);
+
+$sky           : #20A3B6;
+$light-sky     : lighten($sky, 10%);
+$dark-sky      : darken($sky, 7%);
+
+$lemon         : #F9EC38;
+$light-lemon   : mix($white, $lemon, 75%);
