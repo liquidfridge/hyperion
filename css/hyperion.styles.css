@@ -93,3 +93,6 @@ body.admin-menu.adminimal-menu:before {
 
 td.ctools-export-ui-operations {
   position: relative; }
+
+.not-logged-in .block-user {
+  margin-top: 3em; }
